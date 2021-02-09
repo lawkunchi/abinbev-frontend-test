@@ -114,9 +114,9 @@ export default class Product extends Component {
                                                       <div label="Overview" content="For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True Wireless 2 is no different. Thanks to leading audio technology and innovation, these new earbuds deliver the best listening experience anytime, anywhere. With improved ergonomics designed for full day wearing and refined touch controls for a more personalised experience, they have been finely crafted for the most discerning listener and aim to simplify your life by enhancing your everyday">
                                                             
                                                       </div>
-                                                      <div label="Features" content="Features" >
+                                                      <div label="Features" content="Cupcake ipsum dolor sit. Amet marzipan gummi bears sweet roll I love danish. Powder I love topping pastry I love I love tart pie." >
                                                       </div>
-                                                      <div label="What's in the box" content="What's in the box">
+                                                      <div label="What's in the box" content="Apple pie marshmallow candy canes gingerbread sesame snaps danish I love lemon drops. Toffee cake apple pie. Carrot cake carrot cake marzipan pastry jelly">
                                                       </div>
                                                 </Tabs>
                                           </div>
