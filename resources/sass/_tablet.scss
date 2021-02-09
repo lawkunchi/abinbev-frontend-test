@@ -1,0 +1,154 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	.header {
+	.header-image {
+		img {
+		}
+
+		}
+
+		.divider {
+				width: 542px;
+				margin-top: 18px;
+			}
+	}
+
+	.pro-features {
+		span {
+			width: 191px;
+		}
+	}
+
+	.product-container {
+		width: 543px !important;
+
+		.slider-container {
+			width: 543px !important;
+			height: 337px;
+			margin: 0 auto;
+			.slides-wrapper {
+				width: 560px;
+				.slide {
+					width: 170.99px !important;
+					height: 100px !important;
+					position: relative;
+					img {
+						width: 40px;
+					}
+				}
+			}
+		}
+
+		.content-wrapper {
+			margin-top: 150px;
+			.title-container {
+				margin-top: 200px;
+
+				.sub-title {
+					font-size: 27.65px;
+					margin-top: 0px;
+					width: 542px;
+
+				}
+			}
+
+			.price-container {
+				width: inherit;
+			}
+		}
+
+		/*Tabs*/
+
+		.tabs-wrapper {
+			margin-bottom: 100px;
+		}
+
+		.option-wrapper {
+			.option-item {
+				height: 136px;
+				width: 263px;
+				p {
+					width: 200px;
+				}
+			}
+		}
+
+		.tab-nav {
+			width: 542px;
+			white-space: nowrap;
+		  	overflow: hidden;
+		  	text-overflow: ellipsis;
+			.tab-items {
+				width: 542px;
+			}
+		}
+
+		.tab-content {
+			position: absolute;
+			margin-top: 12px;
+			width: 542px;
+			height: 168px;
+		}
+
+		.feature-wrapper {
+			.option-item {
+				width: 541px;
+				.option-title {
+					width: 540px;
+				}	
+			}
+			
+		}
+
+		.spec-wrapper {
+			width: 542px;
+			margin-bottom: 82px;
+		}
+	}
+
+	.footer-container {
+		margin: 0 auto;
+		align-items: normal;
+		/*margin-top: 82px;*/
+		.footer-wrapper {
+			width: 542px;
+			margin: 0 auto;
+			margin-top: 28px;
+
+			.footer-content {
+				margin-top: 0;
+				p {
+					display: none;
+				}
+			}
+
+			.second {
+				margin-top: -40px;
+			}
+
+
+			.price-container {
+				margin-top: 0;
+				h3 {
+				}
+
+				span {
+				}
+			}
+
+			.button-container {
+				button {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+}
+.d-none {
+	display: none;
+}
+
+/*position: absolute;
+    left: 18px;
+    margin-top: 10px;*/
