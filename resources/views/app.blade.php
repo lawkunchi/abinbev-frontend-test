@@ -9,6 +9,14 @@
         <title>Welcome Home</title>
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="preload" href="/fonts/CircularStd-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/fonts/CircularStd-Bold.woff" as="font" type="font/woff2" crossorigin>
+
+        <link rel="preload" href="/fonts/CircularStd-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/fonts/CircularStd-Medium.woff" as="font" type="font/woff2" crossorigin>
+
+        <link rel="preload" href="/fonts/CircularStd-Book.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/fonts/CircularStd-Book.woff" as="font" type="font/woff2" crossorigin>
        
     </head>
     <body>

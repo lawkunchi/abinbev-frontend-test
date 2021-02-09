@@ -1,4 +1,10 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/fonts/CircularStd-Bold.woff": "/fonts/CircularStd-Bold.woff",
+    "/fonts/CircularStd-Bold.woff2": "/fonts/CircularStd-Bold.woff2",
+    "/fonts/CircularStd-Book.woff": "/fonts/CircularStd-Book.woff",
+    "/fonts/CircularStd-Book.woff2": "/fonts/CircularStd-Book.woff2",
+    "/fonts/CircularStd-Medium.woff": "/fonts/CircularStd-Medium.woff",
+    "/fonts/CircularStd-Medium.woff2": "/fonts/CircularStd-Medium.woff2"
 }

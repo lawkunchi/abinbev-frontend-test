@@ -4,18 +4,15 @@
 /*FONTS*/
 @font-face {
   font-family: "Circular-Book";
-  src: url("/fonts/CircularStd-Book.woff");
-  src: url("/fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/CircularStd-Book.eot") format("woff"), url("/fonts/CircularStd-Book.ttf") format("truetype"), url("/fonts/CircularStd-Book.svg#Circular-Book") format("svg");
+  src: url("/fonts/CircularStd-Book.woff") format("woff"), url("/fonts/CircularStd-Book.woff2") format("woff2");
 }
 @font-face {
   font-family: "Circular-Medium";
-  src: url("/fonts/CircularStd-Medium.woff");
-  src: url("/fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/CircularStd-Medium.eot") format("woff"), url("/fonts/CircularStd-Medium.ttf") format("truetype"), url("/fonts/CircularStd-Medium.svg#Circular-Medium") format("svg");
+  src: url("/fonts/CircularStd-Medium.woff") format("woff"), url("/fonts/CircularStd-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Circular-Bold";
-  src: url("/fonts/CircularStd-Bold.woff");
-  src: url("/fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/CircularStd-Bold.eot") format("woff"), url("/fonts/CircularStd-Bold.ttf") format("truetype"), url("/fonts/CircularStd-Bold.svg#Circular-Bold") format("svg");
+  src: url("/fonts/CircularStd-Bold.woff") format("woff"), url("/fonts/CircularStd-Bold.woff2") format("woff2");
 }
 /*VARIABLES*/
 /*BOOTSTRAP GRID*/

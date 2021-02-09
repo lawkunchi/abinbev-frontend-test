@@ -5,23 +5,18 @@
 */
 
 
-
 /*FONTS*/
 
 @mixin font-face($font-name, $path) {
   	@font-face {
 		font-family: quote($font-name);
-		src: url($path+".woff");
-		src: url($path+".eot?#iefix") format("embedded-opentype"), url($path+".eot")
-		format("woff"), url($path+".ttf") format("truetype"), url($path+".svg##{$font-name}")
-		format("svg");
+		src: url($path+".woff") format("woff"), url($path+".woff2") format("woff2");
 	}
 }
 
 @include font-face(Circular-Book, "/fonts/CircularStd-Book");
 @include font-face(Circular-Medium, "/fonts/CircularStd-Medium");
 @include font-face(Circular-Bold, "/fonts/CircularStd-Bold");
-
 
 
 /*VARIABLES*/
