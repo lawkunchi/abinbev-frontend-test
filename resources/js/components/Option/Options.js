@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Option from "./Option";
-import ProductPrice from "./ProductPrice";
 import PropTypes from 'prop-types';
 
 export default class Options extends Component {

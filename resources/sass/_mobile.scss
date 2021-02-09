@@ -1,12 +1,7 @@
 @media only screen and (min-width: 300px) and (max-width: 700px){
 
 	.header {
-	.header-image {
-		img {
-		}
-
-		}
-
+	
 		.divider {
 				width: 340px;
 				margin-top: 17px;
@@ -33,9 +28,7 @@
 				span {
 					position: absolute;
 			    		bottom: 2px;
-			    		font-family: $normal-font;
 			    		font-size: 14px;
-			    		text-align: center;
 			    		line-height: 20px;
 				}
 				
@@ -43,22 +36,22 @@
 	}
 
 	.product-container {
-		width: 340px !important;
+		width: 340px;
 		.slider-container {
-			width: 350px !important;
+			width: 350px;
 			height: 250px;
 			margin: 0 auto;
 			.image-wrapper {
 				height: 183px;
 				img {
-					width: 160px !important;
+					width: 160px;
 				}
 			}
 			.slides-wrapper {
-				width: 340px !important;
+				width: 365px;
 				.slide {
-					width: 107px !important;
-					height: 44px !important;
+					width: 107px;
+					height: 44px;
 					position: relative;
 					img {
 						width: 40px;
@@ -74,12 +67,12 @@
 		width: inherit;	
 		margin-top: 48px;	
 		.badge {
-			font-size: 13.33px !important;
+			font-size: 13.33px;
 			letter-spacing: 1.11px;
 		}
 		.title {
 			font-size: 33.178px;
-			width: 299px !important;
+			width: 299px;
 			height: 94px;
 		}
 
@@ -208,9 +201,7 @@
 			}
 		}
 
-}
+	}
 
 }
-.d-none {
-	display: none;
-}
+

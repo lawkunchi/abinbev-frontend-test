@@ -1,0 +1,17 @@
+.spec-wrapper {
+	margin-top: 72px;
+}
+table {
+	margin-top: 20px;
+	width: 100%;
+	tr {
+		height: 52px;
+		width: 592px;
+		border-top: 1px solid $gray;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.content {
+		text-align: right;
+	}
+}

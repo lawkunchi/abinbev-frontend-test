@@ -39,7 +39,7 @@ export default class Tab extends Component {
 
             return (
 
-      	 	<div className='tab-item col-md-4 col-4' onClick={onClick} content={content}>
+      	 	<div className='tab-item col-md-4 col-4 medium-font' onClick={onClick} content={content}>
 		        	<span className={spanClassName}>{label}</span>
 		      </div>
             );

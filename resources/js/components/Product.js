@@ -123,7 +123,7 @@ export default class Product extends Component {
 
                                           <div className=" col-md-12 col-12">
                                                 <div className="option-wrapper">
-                                                      <h4 className="option-title">Choose your finish.</h4>
+                                                      <h4 className="option-title medium-font">Choose your finish.</h4>
                                                       <Options name="finish" parentCallBack = {this.handleCallback}>
                                                             <div label="Ivory White" parentname="finish" content="For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True. " columnclass="col-md-6 col-12 " optionprice=""></div>
                                                             <div label="Matte Black" parentname="finish" content="Of all of the celestial bodies that capture our attention and fascination as astronomers." columnclass="col-md-6 col-12 " optionprice=""></div>
@@ -133,7 +133,7 @@ export default class Product extends Component {
                                           </div>
 
                                           <div className="feature-wrapper col-md-12 col-12">
-                                                <h4 className="option-title">Would you like to add extended warranty coverage?</h4>
+                                                <h4 className="option-title medium-font">Would you like to add extended warranty coverage?</h4>
                                                 <Options name="warranty" parentCallBack = {this.handleCallback}>
                                                       <div label="2 years coverage" parentname="warranty" content="For the past 75 years, Sennheiser has put sound first." columnclass="col-md-12" optionprice=""></div>
                                                       <div label="3 years coverage" parentname="warranty" content="For the past 75 years, Sennheiser has put sound first." columnclass="col-md-12" optionprice="75"></div>
@@ -148,7 +148,7 @@ export default class Product extends Component {
                                     
 
                                     <div className="feature-wrapper feature-wrapper-no-content">
-                                          <h4 className="option-title">Features.</h4>
+                                          <h4 className="option-title medium-font ">Features.</h4>
                                           <Options name="features" parentCallBack = {this.handleCallback}>
                                                 <div label="Voice Assistant support" parentname="features" content="" columnclass="col-md-12" optionprice=""></div>
                                                 <div label="Customizable controls" parentname="features" content="" columnclass="col-md-12" optionprice="25"></div>
@@ -157,7 +157,7 @@ export default class Product extends Component {
                                     </div>
 
                                     <div className="spec-wrapper">
-                                          <h4 className="option-title ">Specifications</h4>
+                                          <h4 className="option-title medium-font">Specifications</h4>
                                           <Specifications name="features">
                                                 <div label="Dimensions" content="76.8 x 43.8 x 34.7 mm (earbuds and charging case)"></div>
                                                 <div label="USB Standard" content="USB-C"></div>

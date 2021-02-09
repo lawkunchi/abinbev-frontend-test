@@ -29,8 +29,8 @@ export default class Specification extends Component {
             return (
 
       	 	<tr >
-      	 		<td className="label">{label}</td>
-      	 		<td className="content"><span>{content}</span></td>
+      	 		<td className="label medium-font">{label}</td>
+      	 		<td className="content normal-font"><span>{content}</span></td>
 		      </tr>
             );
       }

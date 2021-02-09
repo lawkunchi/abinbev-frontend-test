@@ -1,0 +1,50 @@
+
+.content-container  {
+	width: 100%;	
+}
+
+.title-container {
+	height: 104px;
+	width: inherit;	
+	.badge {
+		color: $red;
+		font-size: 13.33px;
+		text-transform: uppercase;
+		letter-spacing: 1.11px;
+		line-height: 16px;
+	}
+	.title {
+		color: $black;
+		font-size: 39.81px;
+		width: 592px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		line-height: 48px;
+	}
+
+	.sub-title {
+		color: $light-black;
+		font-size: 27.65px;
+		margin-top: 0px;
+		line-height: 32px;
+	}
+}
+
+.price-container {
+	width: 592px;
+	margin-top: 48px;
+	.badge {
+		color: $light-black;
+		font-size: 13.33px;
+		text-transform: uppercase;
+		letter-spacing: 1.11px;
+		line-height: 16px;
+	}
+	.title {
+		margin-top: 0px;
+		font-size: 40px;
+		color: $black;
+		line-height: 48px;
+	}
+}
+

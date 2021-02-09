@@ -1,0 +1,47 @@
+
+.product-container {
+	width: 1218px;
+	margin: 0 auto;
+	margin-top: 48px;
+}
+
+
+.pro-features-wrapper {
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+
+}
+
+.pro-features-wrapper-mobile {
+	display: none !important;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+
+.text-left {
+	text-align: left;
+}
+
+.thick-gray-border {
+	border: 2px solid $gray;
+}
+
+.normal-font {
+	font-family: $normal-font;
+	font-weight: $normal-weight;
+}
+
+.medium-font {
+	font-family: $medium-font;
+	font-weight: $medium-weight;
+}
+
+.bold-font {
+	font-family: $bold-font;
+	font-weight: $bold-weight;
+}

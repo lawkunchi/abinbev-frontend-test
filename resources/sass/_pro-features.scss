@@ -1,0 +1,21 @@
+.pro-features-wrapper {
+	margin-top: 76px;
+	height: 100px;
+
+	.pro-features {
+		width: 191px;
+		height: 63px;
+		display: flex;
+		justify-content: center;
+
+		span {
+			position: absolute;
+	    		bottom: 2px;
+	    		font-size: 14px;
+	    		text-align: center;
+	    		line-height: 20px;
+		}
+		
+	}
+}
+

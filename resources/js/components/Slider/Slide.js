@@ -36,7 +36,7 @@ export default class Slide extends Component {
 	    	} = this;
 
 
-	    	let className = 'slide';
+	    	let className = 'slide thick-gray-border';
 
 	    	if (activeKey === slideKey) {
 	      	className += ' slide-active';

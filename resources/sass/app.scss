@@ -1,39 +1,21 @@
+@charset "UTF-8";
 
 /*
 * Author: Lawrence Chibondo
 */
 
-// Fonts
-
-// Variables
-@import 'variables';
 
 
-
-
-
-/*@font-face {
-    font-family: 'Circular Medium';
-    src: url('/fonts/CircularStd-Medium.eot');
-    src: 
-        url('/fonts/CircularStd-Medium.woff2') format('woff2'),
-        url('/fonts/CircularStd-Medium.woff') format('woff'),
-        url('/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/CircularStd-Medium.ttf') format('truetype'),
-        url('/fonts/CircularStd-Medium.svg#CircularStd-Medium') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}*/
+/*FONTS*/
 
 @mixin font-face($font-name, $path) {
-      @font-face {
-            font-family: quote($font-name);
-            src: url($path+".eot");
-            src: url($path+".eot?#iefix") format("embedded-opentype"), url($path+".woff")
-            format("woff"), url($path+".ttf") format("truetype"), url($path+".svg##{$font-name}")
-            format("svg");
-        }
+  	@font-face {
+		font-family: quote($font-name);
+		src: url($path+".woff");
+		src: url($path+".eot?#iefix") format("embedded-opentype"), url($path+".eot")
+		format("woff"), url($path+".ttf") format("truetype"), url($path+".svg##{$font-name}")
+		format("svg");
+	}
 }
 
 @include font-face(Circular-Book, "/fonts/CircularStd-Book");
@@ -41,15 +23,54 @@
 @include font-face(Circular-Bold, "/fonts/CircularStd-Bold");
 
 
-@charset "UTF-8";
 
-
+/*VARIABLES*/
 @import 'variables';
 
-@import 'layout';
+/*BOOTSTRAP GRID*/
 @import 'bootstrap-grid';
 
+/*UTILS*/
+@import 'utils';
+
+
+/*PAGE LOADER*/
+@import 'loader';
+
+
+/*HEADER*/
+@import 'header';
+
+/*SLIDER*/
+@import 'slider';
+
+/*PRO FEATURES*/
+@import 'pro-features';
+
+/*CONTENT*/
+@import 'content';
+
+/*TAB*/
+@import 'tab';
+
+/*OPTIONS*/
+@import 'options';
+
+/*SPECS*/
+@import 'specs';
+
+/*FOOTER*/
+
+@import 'footer';
+
+
+
+/*MOBILE*/
 @import 'mobile';
+
+/*TABLET*/
 @import 'tablet';
+
+/*LARGE DEVICE*/
 @import 'large';
 

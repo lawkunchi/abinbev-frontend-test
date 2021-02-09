@@ -55,7 +55,6 @@ export default class App extends Component {
 
 
 setTimeout(() => 
-  // the show/hide functions are passed as props
   ReactDOM.render(
     <App
       hideLoader={hideLoader}

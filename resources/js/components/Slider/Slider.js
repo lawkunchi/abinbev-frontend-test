@@ -46,7 +46,7 @@ export default class Slider extends Component {
 
             	<div className="slider-container">
 
-            		<div className="image-wrapper">
+            		<div className="image-wrapper thick-gray-border">
               			<img src={activeImage} />
               		</div>
 
@@ -68,19 +68,19 @@ export default class Slider extends Component {
                                           <div className="icon">
                                                 <img src="images/icons/01.png"/>
                                           </div>
-                                          <span className="title">Customizable Touch Controls </span>
+                                          <span className="title normal-font">Customizable Touch Controls </span>
                                     </div>
                               </div>
                               <div className="col-md-4">
                                     <div className="pro-features">
                                           <div className="icon"><img src="images/icons/02.png"/></div>
-                                          <span className="title">Built-in Equalizer</span>
+                                          <span className="title medium-font">Built-in Equalizer</span>
                                     </div>
                               </div>
                               <div className="col-md-4">
                                     <div className="pro-features">
                                           <div className="icon"><img src="images/icons/03.png"/></div>
-                                          <span className="title">Active Noise Cancellation</span>
+                                          <span className="title medium-font">Active Noise Cancellation</span>
                                     </div>
                               </div>
                         </div>

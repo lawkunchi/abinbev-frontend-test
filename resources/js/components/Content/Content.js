@@ -25,14 +25,14 @@ export default class Content extends Component {
 
                   <div className="Content-container ">
                         <div className="title-container ">
-                              <span className="badge">{badgeTitle}</span>
-                              <h1 className="title">{title}</h1>
-                              <h4 className="sub-title">{subTitle}</h4>
+                              <span className="badge normal-font">{badgeTitle}</span>
+                              <h1 className="title bold-font">{title}</h1>
+                              <h4 className="sub-title normal-font">{subTitle}</h4>
                         </div>
 
                         <div className="price-container">
-                              <span className="badge">{priceBadge}</span>
-                              <h3 className="title">${price}</h3>
+                              <span className="badge normal-font">{priceBadge}</span>
+                              <h3 className="title bold-font">${price}</h3>
                         </div>
 
                         

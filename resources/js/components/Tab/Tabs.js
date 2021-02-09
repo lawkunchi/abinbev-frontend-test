@@ -52,7 +52,7 @@ export default class Tabs extends Component {
 				        	
 				      </div>
 				      <div className="tab-content">
-		          		<p>{activeTab}</p>
+		          		<p className="normal-font">{activeTab}</p>
 		        	</div>
 	        	</div>
 	    	);
