@@ -89,7 +89,7 @@
 
 	.slides-wrapper {
 		/*margin: 0 auto;*/
-		width: 610px;
+		    width: 610px;
 		margin-top: 16px;
 			.slide {
 				border: 2px solid $gray;
@@ -542,6 +542,7 @@
 }
 table {
 	margin-top: 20px;
+	width: 100%;
 	tr {
 		height: 52px;
 		width: 592px;

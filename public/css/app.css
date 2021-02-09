@@ -513,6 +513,7 @@
 
 table {
   margin-top: 20px;
+  width: 100%;
 }
 table tr {
   height: 52px;
@@ -2805,14 +2806,14 @@ template {
     height: 56px;
     margin-top: 24px;
   }
+  .footer-container .spec-wrapper table {
+    width: 299px;
+  }
 }
 .d-none {
   display: none;
 }
 
-/*position: absolute;
-    left: 18px;
-    margin-top: 10px;*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .header .divider {
     width: 542px;
