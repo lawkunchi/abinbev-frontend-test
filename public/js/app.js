@@ -2724,6 +2724,23 @@ var Product = /*#__PURE__*/function (_Component) {
                   priceBadge: priceBadge,
                   price: price
                 })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                className: "tabs-wrapper col-md-12 col-12",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Tab_Tabs__WEBPACK_IMPORTED_MODULE_3__.default, {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                    tabkey: "0",
+                    label: "Overview",
+                    content: "For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True Wireless 2 is no different. Thanks to leading audio technology and innovation, these new earbuds deliver the best listening experience anytime, anywhere. With improved ergonomics designed for full day wearing and refined touch controls for a more personalised experience, they have been finely crafted for the most discerning listener and aim to simplify your life by enhancing your everyday"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                    tabkey: "1",
+                    label: "Features",
+                    content: "Cupcake ipsum dolor sit. Amet marzipan gummi bears sweet roll I love danish. Powder I love topping pastry I love I love tart pie."
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                    tabkey: "2",
+                    label: "What's in the box",
+                    content: "Apple pie marshmallow candy canes gingerbread sesame snaps danish I love lemon drops. Toffee cake apple pie. Carrot cake carrot cake marzipan pastry jelly"
+                  })]
+                })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
                 className: "row pro-features-wrapper-mobile mobile-only",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
@@ -2769,23 +2786,6 @@ var Product = /*#__PURE__*/function (_Component) {
                     })]
                   })
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-                className: "tabs-wrapper col-md-12 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Tab_Tabs__WEBPACK_IMPORTED_MODULE_3__.default, {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-                    tabkey: "0",
-                    label: "Overview",
-                    content: "For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True Wireless 2 is no different. Thanks to leading audio technology and innovation, these new earbuds deliver the best listening experience anytime, anywhere. With improved ergonomics designed for full day wearing and refined touch controls for a more personalised experience, they have been finely crafted for the most discerning listener and aim to simplify your life by enhancing your everyday"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-                    tabkey: "1",
-                    label: "Features",
-                    content: "Cupcake ipsum dolor sit. Amet marzipan gummi bears sweet roll I love danish. Powder I love topping pastry I love I love tart pie."
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-                    tabkey: "2",
-                    label: "What's in the box",
-                    content: "Apple pie marshmallow candy canes gingerbread sesame snaps danish I love lemon drops. Toffee cake apple pie. Carrot cake carrot cake marzipan pastry jelly"
-                  })]
-                })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
                 className: " col-md-12 col-12",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
