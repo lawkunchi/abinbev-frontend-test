@@ -2393,7 +2393,7 @@ var Option = /*#__PURE__*/function (_Component) {
       var columnClassName = '';
 
       if (activeOption === label) {
-        className += ' option-item-active';
+        className += ' option-item-active focus-outline';
       }
 
       if (columnClass) {
@@ -2411,6 +2411,7 @@ var Option = /*#__PURE__*/function (_Component) {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: className,
           onClick: onClick,
+          tabIndex: "50",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
             className: "medium-font",
             children: label
@@ -2724,7 +2725,7 @@ var Product = /*#__PURE__*/function (_Component) {
                   price: price
                 })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-                className: "row pro-features-wrapper-mobile",
+                className: "row pro-features-wrapper-mobile mobile-only",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
                   className: "col-12",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
@@ -2772,12 +2773,15 @@ var Product = /*#__PURE__*/function (_Component) {
                 className: "tabs-wrapper col-md-12 col-12",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Tab_Tabs__WEBPACK_IMPORTED_MODULE_3__.default, {
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                    tabkey: "0",
                     label: "Overview",
                     content: "For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True Wireless 2 is no different. Thanks to leading audio technology and innovation, these new earbuds deliver the best listening experience anytime, anywhere. With improved ergonomics designed for full day wearing and refined touch controls for a more personalised experience, they have been finely crafted for the most discerning listener and aim to simplify your life by enhancing your everyday"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                    tabkey: "1",
                     label: "Features",
                     content: "Cupcake ipsum dolor sit. Amet marzipan gummi bears sweet roll I love danish. Powder I love topping pastry I love I love tart pie."
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                    tabkey: "2",
                     label: "What's in the box",
                     content: "Apple pie marshmallow candy canes gingerbread sesame snaps danish I love lemon drops. Toffee cake apple pie. Carrot cake carrot cake marzipan pastry jelly"
                   })]
@@ -2959,20 +2963,27 @@ var Slide = /*#__PURE__*/function (_Component) {
       var _this$props = this.props,
           activeSlide = _this$props.activeSlide,
           onClick = _this$props.onClick,
+          onFocus = _this$props.onFocus,
           image = _this$props.image,
           slide = _this$props.slide,
           activeKey = _this$props.activeKey,
-          slideKey = _this$props.slideKey;
+          slideKey = _this$props.slideKey,
+          focusedChild = _this$props.focusedChild;
       var className = 'slide thick-gray-border';
 
       if (activeKey === slideKey) {
         className += ' slide-active';
       }
 
+      if (focusedChild === slideKey) {
+        className += ' slide-focused';
+      }
+
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         className: "col-4",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
           className: className,
+          tabIndex: slideKey,
           slidekey: slideKey,
           onClick: onClick,
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
@@ -3065,10 +3076,19 @@ var Slider = /*#__PURE__*/function (_Component) {
       });
     });
 
+    _defineProperty(_assertThisInitialized(_this), "onFocus", function (child) {
+      _this.setState({
+        focusedChild: child.props.slidekey
+      });
+
+      console.log("i'm focused");
+    });
+
     _this.state = {
       activeSlide: _this.props.children[0].props.slide,
       activeImage: _this.props.children[0].props.image,
-      activeKey: _this.props.children[0].props.slidekey
+      activeKey: _this.props.children[0].props.slidekey,
+      focusedChild: null
     };
     return _this;
   }
@@ -3083,7 +3103,8 @@ var Slider = /*#__PURE__*/function (_Component) {
           _this$state = this.state,
           activeSlide = _this$state.activeSlide,
           activeImage = _this$state.activeImage,
-          activeKey = _this$state.activeKey;
+          activeKey = _this$state.activeKey,
+          focusedChild = _this$state.focusedChild;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         className: "slider-container",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -3098,6 +3119,10 @@ var Slider = /*#__PURE__*/function (_Component) {
             var slide = child.props.slide;
             var slidekey = child.props.slidekey;
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Slide__WEBPACK_IMPORTED_MODULE_2__.default, {
+              focusedChild: focusedChild,
+              onFocus: function onFocus() {
+                return _this2.onFocus(child);
+              },
               activeSlide: activeSlide,
               slide: slide,
               slideKey: slidekey,
@@ -3420,15 +3445,18 @@ var Tab = /*#__PURE__*/function (_Component) {
           activeTab = _this$props.activeTab,
           label = _this$props.label,
           content = _this$props.content,
-          onClick = _this$props.onClick;
+          onClick = _this$props.onClick,
+          activeKey = _this$props.activeKey,
+          tabKey = _this$props.tabKey;
       var spanClassName = '';
 
-      if (activeTab === label) {
+      if (activeKey === tabKey) {
         spanClassName += 'tab-item-active';
       }
 
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         className: "tab-item col-md-4 col-4 medium-font",
+        tabkey: tabKey,
         onClick: onClick,
         content: content,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
@@ -3446,7 +3474,9 @@ _defineProperty(Tab, "propTypes", {
   activeTab: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired),
   label: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired),
   content: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired),
-  onClick: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func.isRequired)
+  onClick: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func.isRequired),
+  activeKey: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired),
+  tabKey: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired)
 });
 
 
@@ -3513,14 +3543,14 @@ var Tabs = /*#__PURE__*/function (_Component) {
 
     _defineProperty(_assertThisInitialized(_this), "onClickTabItem", function (tab) {
       _this.setState({
-        activeTab: tab.props.content
+        activeTab: tab.props.content,
+        activeKey: child.props.tabkey
       });
-
-      console.log(_this.state);
     });
 
     _this.state = {
-      activeTab: _this.props.children[0].props.content
+      activeTab: _this.props.children[0].props.content,
+      activeKey: _this.props.children[0].props.tabkey
     };
     return _this;
   }
@@ -3532,7 +3562,9 @@ var Tabs = /*#__PURE__*/function (_Component) {
 
       var onClickTabItem = this.onClickTabItem,
           children = this.props.children,
-          activeTab = this.state.activeTab;
+          _this$state = this.state,
+          activeTab = _this$state.activeTab,
+          activeKey = _this$state.activeKey;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "tab-nav text-left",
@@ -3541,14 +3573,17 @@ var Tabs = /*#__PURE__*/function (_Component) {
             children: children.map(function (child) {
               var label = child.props.label;
               var content = child.props.content;
+              var tabkey = child.props.tabkey;
               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Tab__WEBPACK_IMPORTED_MODULE_2__.default, {
+                activeKey: activeKey,
+                tabKey: tabkey,
                 activeTab: activeTab,
                 label: label,
                 content: content,
                 onClick: function onClick() {
                   return _this2.onClickTabItem(child);
                 }
-              }, label);
+              }, tabkey);
             })
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {

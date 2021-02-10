@@ -30,16 +30,18 @@ export default class Option extends Component {
 	        		content,
 	        		columnClass,
 	        		optionPrice,
-	        		parentname
+	        		parentname,
 	      	},
 	    	} = this;
+
+
 
 
 	    	let className = 'option-item thick-gray-border';
 	    	let columnClassName = '';
 
 	    	if (activeOption === label) {
-	      		className += ' option-item-active';
+	      		className += ' option-item-active focus-outline';
 	    	}
 	    	if(columnClass) {
 	    		columnClassName += columnClass;
@@ -52,8 +54,8 @@ export default class Option extends Component {
 
             return (
 
-      	 	<div className={columnClassName} >
-      	 		<div className={className} onClick={onClick}>
+      	 	<div className={columnClassName}  >
+      	 		<div className={className} onClick={onClick} tabIndex="50">
       	 			<span className="medium-font">{label}</span>
 	        		<p className="medium-font">{content}</p>
 	        		<small className="float-right normal-font">{optionPriceString}</small>

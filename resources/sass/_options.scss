@@ -36,6 +36,11 @@
 	&:hover {
 		border: 2px solid $dark-gray;
 	}
+
+	&:focus  {
+		box-shadow: 0 0 0 3px $outline;
+		outline: none;
+	}
 }
 
 .option-title {
@@ -45,7 +50,16 @@
 
 
 .option-item-active {
-	border-color:  2px solid $blue !important;
+	border:  2px solid $blue;
+
+	&:hover {
+		border: 2px solid $blue;
+	}
+
+	&:focus  {
+		box-shadow: 0 0 0 3px $outline;
+		outline: none;
+	}
 
 }
 

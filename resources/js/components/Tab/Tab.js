@@ -8,6 +8,8 @@ export default class Tab extends Component {
 	    label: PropTypes.string.isRequired,
 	    content: PropTypes.string.isRequired,
 	    onClick: PropTypes.func.isRequired,
+	    activeKey: PropTypes.string.isRequired,
+	    tabKey: PropTypes.string.isRequired,
   	};
 
   	constructor(props) {
@@ -28,18 +30,22 @@ export default class Tab extends Component {
 	        		label,
 	        		content,
 	     			onClick,
+	     			activeKey,
+	        		tabKey
 	      	},
 	    	} = this;
 
 	    	let spanClassName = '';
 
-	    	if (activeTab === label) {
+	    	if (activeKey === tabKey) {
 	      		spanClassName +='tab-item-active';
 	    	}
 
+
+
             return (
 
-      	 	<div className='tab-item col-md-4 col-4 medium-font' onClick={onClick} content={content}>
+      	 	<div className='tab-item col-md-4 col-4 medium-font' tabkey={tabKey} onClick={onClick} content={content}>
 		        	<span className={spanClassName}>{label}</span>
 		      </div>
             );

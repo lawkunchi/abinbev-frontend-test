@@ -28,10 +28,12 @@ export default class Slide extends Component {
 	      	props: {
 	        		activeSlide,
       				onClick,
+      				onFocus,
 	        		image,
 	        		slide,
 	        		activeKey,
-	        		slideKey
+	        		slideKey,
+	        		focusedChild
 	      	},
 	    	} = this;
 
@@ -39,13 +41,17 @@ export default class Slide extends Component {
 	    	let className = 'slide thick-gray-border';
 
 	    	if (activeKey === slideKey) {
-	      	className += ' slide-active';
+	      		className += ' slide-active';
+	    	}
+
+	    	if(focusedChild === slideKey) {
+	    		className += ' slide-focused';
 	    	}
 
             return (
 
         	<div className="col-4">
-                  <div className={className} slidekey={slideKey} onClick={onClick} >
+                  <div className={className} tabIndex={slideKey} slidekey={slideKey} onClick={onClick} >
                   	<img src={slide}/>
                   </div>
             </div>

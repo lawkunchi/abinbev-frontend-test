@@ -14,15 +14,16 @@ export default class Tabs extends Component {
 
     		this.state = {
       			activeTab: this.props.children[0].props.content,
+      			activeKey: this.props.children[0].props.tabkey,
     		};
 
   	}
 
   	onClickTabItem = (tab) => {
     		this.setState({ 
-    			activeTab: tab.props.content 
+    			activeTab: tab.props.content,
+    			activeKey: child.props.tabkey,
     		});
-  		console.log(this.state);
   	}
 
       render() {
@@ -34,6 +35,7 @@ export default class Tabs extends Component {
 	      	},
 		      state: {
 	        		activeTab,
+	        		activeKey
 		      }
     		} = this;
 
@@ -44,8 +46,9 @@ export default class Tabs extends Component {
 				          		{children.map((child) => {
 				            		const { label } = child.props;
 				            		const { content } = child.props;
+				            		const { tabkey } = child.props;
 				            		return (
-					              		<Tab activeTab={activeTab} key={label} label={label} content={content} onClick={() => this.onClickTabItem(child)}/>
+					              		<Tab activeKey={activeKey} tabKey={tabkey} key={tabkey} activeTab={activeTab} label={label} content={content} onClick={() => this.onClickTabItem(child)}/>
 				            		);
 				          		})}
 				        	</div>

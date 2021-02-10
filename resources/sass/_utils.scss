@@ -13,8 +13,8 @@
 
 }
 
-.pro-features-wrapper-mobile {
-	display: none !important;
+.mobile-only {
+	display: none;
 }
 
 
@@ -44,4 +44,13 @@
 .bold-font {
 	font-family: $bold-font;
 	font-weight: $bold-weight;
+}
+
+.focus-outline {
+	&:focus {
+		&:focus  {
+			box-shadow: 0 0 0 3px $outline;
+			outline: none;
+		}
+	}
 }
