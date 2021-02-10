@@ -2361,6 +2361,9 @@ template {
   border-bottom: 2px solid #111111;
   cursor: pointer;
   color: #111111;
+  display: inline-block;
+  -webkit-text-fill-color: #111111;
+  -webkit-opacity: 1;
 }
 
 .tab-content {

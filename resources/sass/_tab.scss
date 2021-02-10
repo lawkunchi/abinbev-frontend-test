@@ -26,6 +26,9 @@
 			border-bottom: 2px solid $black;
 			cursor: pointer;
 			color: $black;
+			display: inline-block;
+			-webkit-text-fill-color: rgba(17, 17, 17, 1);
+			-webkit-opacity: 1;
 		}
 	}
 }
