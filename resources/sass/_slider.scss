@@ -34,11 +34,6 @@
 					cursor: pointer;
 				}
 
-				&:focus  {
-					box-shadow: 0 0 0 3px $outline;
-					outline: none;
-				}
-
 			}
 
 		
@@ -48,11 +43,7 @@
 			&:hover {
 				border: 2px solid $blue;
 			}
-
-			&:focus {
-				box-shadow: 0 0 0 3px $outline;
-				outline: none;
-			}
+			
 		}
 
 	}

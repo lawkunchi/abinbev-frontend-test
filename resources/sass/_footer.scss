@@ -61,10 +61,6 @@
 				cursor: pointer;
 				background: $light-blue;
 			}
-			&:focus {
-				outline: 3px solid $light-gray;
-				border-radius:10px;
-			}
 		}
 	}
 }

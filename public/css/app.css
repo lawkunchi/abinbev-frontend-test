@@ -2164,7 +2164,7 @@ template {
   font-weight: 700;
 }
 
-.focus-outline:focus:focus {
+.focus-outline:focus {
   box-shadow: 0 0 0 3px #D8DCE0;
   outline: none;
 }
@@ -2260,19 +2260,11 @@ template {
   border: 2px solid #B6BCC6;
   cursor: pointer;
 }
-.slider-container .slides-wrapper .slide:focus {
-  box-shadow: 0 0 0 3px #D8DCE0;
-  outline: none;
-}
 .slider-container .slides-wrapper .slide-active {
   border: 2px solid #1E96D4;
 }
 .slider-container .slides-wrapper .slide-active:hover {
   border: 2px solid #1E96D4;
-}
-.slider-container .slides-wrapper .slide-active:focus {
-  box-shadow: 0 0 0 3px #D8DCE0;
-  outline: none;
 }
 
 /*PRO FEATURES*/
@@ -2420,10 +2412,6 @@ template {
 .option-item:hover {
   border: 2px solid #B6BCC6;
 }
-.option-item:focus {
-  box-shadow: 0 0 0 3px #D8DCE0;
-  outline: none;
-}
 
 .option-title {
   font-size: 19.2px;
@@ -2435,10 +2423,6 @@ template {
 }
 .option-item-active:hover {
   border: 2px solid #1E96D4;
-}
-.option-item-active:focus {
-  box-shadow: 0 0 0 3px #D8DCE0;
-  outline: none;
 }
 
 .feature-wrapper {
@@ -2540,10 +2524,6 @@ table .content {
 .footer-container .button-container button:hover {
   cursor: pointer;
   background: #66BEEB;
-}
-.footer-container .button-container button:focus {
-  outline: 3px solid #D8DCE0;
-  border-radius: 10px;
 }
 
 /*MOBILE*/

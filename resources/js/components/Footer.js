@@ -48,7 +48,7 @@ export default class Footer extends Component {
                                           </div>
                                           <div className="col-md-6 col-xl-4">
                                                 <div className="button-container">
-                                                      <button className="bold-font">Buy Now</button>
+                                                      <button className="bold-font focus-outline">Buy Now</button>
                                                 </div>
                                           </div>
                                     </div>

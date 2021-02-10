@@ -2223,7 +2223,7 @@ var Footer = /*#__PURE__*/function (_Component) {
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
                   className: "button-container",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-                    className: "bold-font",
+                    className: "bold-font focus-outline",
                     children: "Buy Now"
                   })
                 })
@@ -2968,7 +2968,7 @@ var Slide = /*#__PURE__*/function (_Component) {
           slide = _this$props.slide,
           activeKey = _this$props.activeKey,
           slideKey = _this$props.slideKey;
-      var className = 'slide thick-gray-border';
+      var className = 'slide thick-gray-border focus-outline';
 
       if (activeKey === slideKey) {
         className += ' slide-active';
