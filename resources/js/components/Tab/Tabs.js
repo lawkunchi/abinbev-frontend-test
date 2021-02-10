@@ -22,7 +22,7 @@ export default class Tabs extends Component {
   	onClickTabItem = (tab) => {
     		this.setState({ 
     			activeTab: tab.props.content,
-    			activeKey: child.props.tabkey,
+    			activeKey: tab.props.tabkey,
     		});
   	}
 

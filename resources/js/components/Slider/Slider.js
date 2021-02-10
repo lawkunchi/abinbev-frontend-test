@@ -15,7 +15,6 @@ export default class Slider extends Component {
                   activeSlide: this.props.children[0].props.slide,
                   activeImage: this.props.children[0].props.image,
                   activeKey: this.props.children[0].props.slidekey,
-                  focusedChild: null,
             };
 
       }
@@ -28,13 +27,6 @@ export default class Slider extends Component {
                   });
       }
 
-      onFocus = (child) => {
-            this.setState({ 
-                        focusedChild: child.props.slidekey, 
-                  });
-
-            console.log("i'm focused");
-      }
 
       render() {
 
@@ -47,7 +39,6 @@ export default class Slider extends Component {
                         activeSlide,
                         activeImage,
                         activeKey,
-                        focusedChild
                   }
             } = this;
 
@@ -66,7 +57,7 @@ export default class Slider extends Component {
                                     const { slide } = child.props;
                                     const { slidekey } = child.props;
                                     return (
-                                          <Slide focusedChild={focusedChild} onFocus={() => this.onFocus(child)} activeSlide={activeSlide} slide={slide} slideKey={slidekey} key={slidekey} activeKey={activeKey} image={image} onClick={() => this.onClickSlideItem(child)}/>
+                                          <Slide activeSlide={activeSlide} slide={slide} slideKey={slidekey} key={slidekey} activeKey={activeKey} image={image} onClick={() => this.onClickSlideItem(child)}/>
                                     );
                               })}
               		</div>

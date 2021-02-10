@@ -2967,16 +2967,11 @@ var Slide = /*#__PURE__*/function (_Component) {
           image = _this$props.image,
           slide = _this$props.slide,
           activeKey = _this$props.activeKey,
-          slideKey = _this$props.slideKey,
-          focusedChild = _this$props.focusedChild;
+          slideKey = _this$props.slideKey;
       var className = 'slide thick-gray-border';
 
       if (activeKey === slideKey) {
         className += ' slide-active';
-      }
-
-      if (focusedChild === slideKey) {
-        className += ' slide-focused';
       }
 
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -3076,19 +3071,10 @@ var Slider = /*#__PURE__*/function (_Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_this), "onFocus", function (child) {
-      _this.setState({
-        focusedChild: child.props.slidekey
-      });
-
-      console.log("i'm focused");
-    });
-
     _this.state = {
       activeSlide: _this.props.children[0].props.slide,
       activeImage: _this.props.children[0].props.image,
-      activeKey: _this.props.children[0].props.slidekey,
-      focusedChild: null
+      activeKey: _this.props.children[0].props.slidekey
     };
     return _this;
   }
@@ -3103,8 +3089,7 @@ var Slider = /*#__PURE__*/function (_Component) {
           _this$state = this.state,
           activeSlide = _this$state.activeSlide,
           activeImage = _this$state.activeImage,
-          activeKey = _this$state.activeKey,
-          focusedChild = _this$state.focusedChild;
+          activeKey = _this$state.activeKey;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         className: "slider-container",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -3119,10 +3104,6 @@ var Slider = /*#__PURE__*/function (_Component) {
             var slide = child.props.slide;
             var slidekey = child.props.slidekey;
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Slide__WEBPACK_IMPORTED_MODULE_2__.default, {
-              focusedChild: focusedChild,
-              onFocus: function onFocus() {
-                return _this2.onFocus(child);
-              },
               activeSlide: activeSlide,
               slide: slide,
               slideKey: slidekey,
@@ -3544,7 +3525,7 @@ var Tabs = /*#__PURE__*/function (_Component) {
     _defineProperty(_assertThisInitialized(_this), "onClickTabItem", function (tab) {
       _this.setState({
         activeTab: tab.props.content,
-        activeKey: child.props.tabkey
+        activeKey: tab.props.tabkey
       });
     });
 

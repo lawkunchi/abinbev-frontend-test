@@ -33,7 +33,6 @@ export default class Slide extends Component {
 	        		slide,
 	        		activeKey,
 	        		slideKey,
-	        		focusedChild
 	      	},
 	    	} = this;
 
@@ -44,9 +43,6 @@ export default class Slide extends Component {
 	      		className += ' slide-active';
 	    	}
 
-	    	if(focusedChild === slideKey) {
-	    		className += ' slide-focused';
-	    	}
 
             return (
 
