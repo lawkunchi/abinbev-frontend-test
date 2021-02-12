@@ -2059,6 +2059,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var Content = /*#__PURE__*/function (_Component) {
   _inherits(Content, _Component);
 
@@ -2068,11 +2069,25 @@ var Content = /*#__PURE__*/function (_Component) {
     _classCallCheck(this, Content);
 
     return _super.call(this, props);
+    /*this.Header = null
+    this.intro = null;;
+    // this.myTween = TweenMax({paused: true});
+      // console.log(TweenMax); */
   }
 
   _createClass(Content, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      /*TweenLite.set('normal-font, .title')
+        var lines = new TimelineMax({repeat:5, yoyo:true, repeatDelay:2})
+      .to(this.Header,1,{x:'0%'})
+      .to(this.intro,1,{x:'0%'}, "+=0.3") */
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this = this;
+
       var _this$props = this.props,
           title = _this$props.title,
           subTitle = _this$props.subTitle,
@@ -2085,9 +2100,15 @@ var Content = /*#__PURE__*/function (_Component) {
           className: "title-container ",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
             className: "badge normal-font",
+            ref: function ref(el) {
+              return _this.intro = el;
+            },
             children: badgeTitle
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
             className: "title bold-font",
+            ref: function ref(el) {
+              return _this.Header = el;
+            },
             children: title
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
             className: "sub-title normal-font",
@@ -2753,7 +2774,7 @@ var Product = /*#__PURE__*/function (_Component) {
                         src: "images/icons/01.png"
                       })
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-                      className: "title",
+                      className: "title medium-font",
                       children: "Customizable Touch Controls "
                     })]
                   })
@@ -2767,7 +2788,7 @@ var Product = /*#__PURE__*/function (_Component) {
                         src: "images/icons/02.png"
                       })
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-                      className: "title",
+                      className: "title medium-font",
                       children: "Built-in Equalizer"
                     })]
                   })
@@ -2781,7 +2802,7 @@ var Product = /*#__PURE__*/function (_Component) {
                         src: "images/icons/03.png"
                       })
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-                      className: "title",
+                      className: "title medium-font",
                       children: "Active Noise Cancellation"
                     })]
                   })

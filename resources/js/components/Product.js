@@ -6,8 +6,9 @@ import Tabs from "./Tab/Tabs";
 import Options from "./Option/Options";
 import Specifications from "./Specification/Specifications";
 
-
 export default class Product extends Component {
+
+
 
       constructor(props) {
             super(props);
@@ -22,6 +23,7 @@ export default class Product extends Component {
             };
 
       }
+
 
       handleCallback = (childData) => {
             this.setState({data: childData});
@@ -49,6 +51,8 @@ export default class Product extends Component {
                         data
                   }
             } = this;
+
+
 
             return (
 
@@ -104,19 +108,19 @@ export default class Product extends Component {
                                                             <div className="icon">
                                                                   <img src="images/icons/01.png"/>
                                                             </div>
-                                                            <span className="title">Customizable Touch Controls </span>
+                                                            <span className="title medium-font">Customizable Touch Controls </span>
                                                       </div>
                                                 </div>
                                                 <div className="col-12">
                                                       <div className="pro-features-mobile">
                                                             <div className="icon"><img src="images/icons/02.png"/></div>
-                                                            <span className="title">Built-in Equalizer</span>
+                                                            <span className="title medium-font">Built-in Equalizer</span>
                                                       </div>
                                                 </div>
                                                 <div className="col-12">
                                                       <div className="pro-features-mobile">
                                                             <div className="icon"><img src="images/icons/03.png"/></div>
-                                                            <span className="title">Active Noise Cancellation</span>
+                                                            <span className="title medium-font">Active Noise Cancellation</span>
                                                       </div>
                                                 </div>
                                           </div>

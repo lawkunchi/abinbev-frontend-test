@@ -37,6 +37,10 @@
 		border: 2px solid $dark-gray;
 	}
 
+	&:focus  {
+		outline: none !important;
+	}
+
 }
 
 .option-title {
@@ -52,6 +56,11 @@
 		border: 2px solid $blue;
 	}
 
+	&:focus  {
+		outline: none !important;
+	}
+
+
 }
 
 .feature-wrapper {
@@ -64,6 +73,10 @@
 		p {
 			width: 543px;
 		}
+
+		&:focus  {
+			outline: none !important;
+		}
 	}
 }
 
@@ -75,5 +88,9 @@
 	    span {
 	    	margin-top: 0 !important; 
 	    }
+
+	    &:focus  {
+			outline: none !important;
+		}
 	}
 }

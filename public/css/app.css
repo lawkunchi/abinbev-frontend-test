@@ -2166,7 +2166,7 @@ template {
 
 .focus-outline:focus {
   box-shadow: 0 0 0 3px #D8DCE0;
-  outline: none;
+  outline: none !important;
 }
 
 /*PAGE LOADER*/
@@ -2415,6 +2415,9 @@ template {
 .option-item:hover {
   border: 2px solid #B6BCC6;
 }
+.option-item:focus {
+  outline: none !important;
+}
 
 .option-title {
   font-size: 19.2px;
@@ -2426,6 +2429,9 @@ template {
 }
 .option-item-active:hover {
   border: 2px solid #1E96D4;
+}
+.option-item-active:focus {
+  outline: none !important;
 }
 
 .feature-wrapper {
@@ -2439,6 +2445,9 @@ template {
 .feature-wrapper .option-item p {
   width: 543px;
 }
+.feature-wrapper .option-item:focus {
+  outline: none !important;
+}
 
 .feature-wrapper-no-content .option-item {
   display: flex;
@@ -2447,6 +2456,9 @@ template {
 }
 .feature-wrapper-no-content .option-item span {
   margin-top: 0 !important;
+}
+.feature-wrapper-no-content .option-item:focus {
+  outline: none !important;
 }
 
 /*SPECS*/
